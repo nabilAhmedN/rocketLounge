@@ -4,12 +4,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main-bg-color: #eaeef0;
+    --main-border-color: #eaeef0;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #eaeef0;
+    background: var(--main-bg-color);
     
 }
 
@@ -22,8 +27,8 @@ body {
     position: relative;
     width: 250px;
     height: 250px;
-    background: #eaeef0;
-    border: 6px solid #eaeef0;
+    background: var(--main-bg-color);
+    border: 6px solid var(--main-border-color);
     border-radius: 50%;
     box-shadow: -8px -8px 15px rgba(255, 255, 255, 1), 8px 8px 25px rgba(0, 0 , 0, 0.15);
     overflow: hidden;
@@ -41,8 +46,8 @@ body {
     content: '';
     position: absolute;
     inset: 40px;
-    background: #eaeef0;
-    border: 3px solid #eaeef0;
+    background: var(--main-bg-color);
+    border: 3px solid --main-border-color;
     border-radius: 50%;
     box-shadow: -8px -8px 25px rgba(255, 255, 255, 1), 8px 8px 25px rgba(0, 0 , 0, 0.15),
     inset -1px -1px 15px rgba(255, 255, 255, 1);
